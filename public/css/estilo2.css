@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family:OpenSans-Bold;
     src:url(letra/OpenSans/OpenSans-Bold.ttf); 
     }
@@ -11,93 +11,7 @@
         padding: 0;
         box-sizing: border-box;
     }
-    /* galeria */
-    .carousel-indicators {
-        position: absolute;
-        right: 0;
-        bottom: 150px;
-        left: 0;
-        z-index: 15;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        margin-right: 15%;
-        margin-left: 15%;
-        list-style: none;
-    }
-    ol {
-        list-style-type: decimal;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-    .s_carousel.s_carousel_default .carousel-indicators li, .s_quotes_carousel.s_carousel_default .carousel-indicators li {
-        height: .5rem;
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-        border-radius: 2px;
-    }
-    .carousel-indicators .active {
-        background-color: #FFFFFF;
-    }
-    .carousel-indicators li {
-        position: relative;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 1 auto;
-        flex: 0 1 auto;
-        width: 30px;
-        height: 3px;
-        margin-right: 3px;
-        margin-left: 3px;
-        text-indent: -999px;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-    .carousel-indicators li::before {
-        position: absolute;
-        top: -10px;
-        left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 10px;
-        content: "";
-    }
-    .carousel-indicators li::after {
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 10px;
-        content: "";
-    }
-    *, *::before, *::after {
-        box-sizing: border-box;
-    }
-    .s_carousel .carousel-inner, .s_quotes_carousel .carousel-inner {
-        overflow: hidden;
-        height: 100%;
-    }
-    .carousel-inner {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-    .s_carousel .carousel-inner .carousel-item, .s_quotes_carousel .carousel-inner .carousel-item {
-        height: 100%;
-    }
-    .oe_img_bg.o_bg_img_opt_custom {
-        padding-bottom: 0 !important;
-    }
-    .as-home-slider-v12 .carousel-item {
-        background-size: cover;
-        background-position: center;
-    }
-    .oe_img_bg.o_bg_img_opt_custom {
-        background-size: auto;
-    }
     
-    /* fin galeria*/
     body {
         font-family:YanoneKaffeesatz-Bold;
     }
@@ -124,10 +38,7 @@
         left: 0;
         z-index: 100;
     }
-    .contenedorC {
-        display:flex;
-        justify-content:center;
-    }
+    
     .contenedor {
         width: 100%;
         margin: auto;
@@ -136,6 +47,7 @@
         margin-top: 2px;
         text-align: center;
     }
+    /*Contenedor de tv*/
     .fondo {
         max-width: 1100px;
         margin: 0 auto;
@@ -155,25 +67,10 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-    .fondo {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-box-orient: vertical;
-        -moz-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
     .fondo-letras {
-        width: 52%;
-        height: 100%;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 1 auto;
-        -moz-box-flex: 0;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        z-index: 3;
-        margin: -5% 0;
+        
+        flex-direction: column;
+        
     }
     @media only screen and (max-width: 949px) and (min-width: 550px), only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
     .fondo-letras {
@@ -205,6 +102,7 @@
         line-height: 1.1;
         margin-bottom: 3rem;
         text-align: center;
+        width: 100%;
     }
     @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
         .titulo {
@@ -226,21 +124,20 @@
         .fondo-letras {
             width: 100%;
         }
-        .fondo-letra-contacto {
-            color: #cebdbd;
-        }
+        
     }
     .parrafo {
         font-size: 1.625rem;
         font-weight: normal;
         color: #14dadf;
         text-align: center;
+        margin-top: 110px;
     }
     @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
-    .parrafo, .fondo-letras {
-        font-size: 1.125rem;
-        margin-bottom: 1px;
-    }
+        .parrafo, .fondo-letras {
+            font-size: 1.125rem;
+            margin-bottom: 1px;
+        }
     }
     .fondo-video {
         width: 48%;
@@ -685,52 +582,10 @@
             max-width: 1920px;
         }
     }
-    #contacto {
-        position: relative;
-    }
     .contenedor {
         position: relative;
     }
-    #contacto h3, h4, .parrafo-articulo-contacto {
-        text-align: center;
-    }
-    #contacto .aticulo-contacto{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 45px;
-    }
-    #contacto .articulo1 {
-        margin: 30px;
-    }
-    
-    #contacto img {
-        width: 100%;
-        height: 100%;
-        border-radius: 4%;
-    }
-    #contacto a {
-        display: flex;
-        justify-content: center;
-        color: #0000FF;
-        text-decoration: none;
-        width: 220px;
-        height: 320px;
-    }
-    .articulo2 {
-        width: 100%;
-        height: 100%;
-        max-width: 220px;
-        background-color: #818181;
-        border-radius: 4%;
-        max-height: 320px;
-    }
     @media only screen and (max-width: 991px) and (min-width: 550px){
-        .fondo-letra-contacto {
-            color: #cebdbd;
-        }
         .img-banner {
             width: 265%;
         }
